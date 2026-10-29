@@ -7,15 +7,7 @@
     },
     "backend": {
       "root": "backend",
-      "framework": "fastapi",
-      "bindings": [
-        {
-          "type": "service",
-          "service": "backend",
-          "format": "url",
-          "env": "BACKEND_URL"
-        }
-      ]
+      "framework": "fastapi"
     },
     "frontend": {
       "root": "frontend",
@@ -32,7 +24,7 @@
     {
       "source": "/(.*)",
       "destination": {
-        "service": "app"
+        "service": "frontend"
       }
     }
   ]
